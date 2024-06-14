@@ -1,0 +1,30 @@
+uuid: fcd5a718-1338-4b0f-9c25-443d9140e333
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.wrapper.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: wrapper
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      wrapper: wrapper
+    negate: 1
+    target_bundles_drag_drop:
+      wrapper:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
