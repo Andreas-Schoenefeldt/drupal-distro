@@ -1,15 +1,15 @@
-uuid: f71ff5d2-acb0-43dc-b8b6-44f17be56a3a
+uuid: 21cdfc37-2a44-4137-9778-68a40ba9d4b2
 langcode: en
 status: true
 dependencies:
   theme:
-    - olivero
+    - bootstrap
 _core:
   default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
-id: olivero_primary_admin_actions
-theme: olivero
-region: highlighted
-weight: -5
+id: bootstrap_primary_admin_actions
+theme: bootstrap
+region: header
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

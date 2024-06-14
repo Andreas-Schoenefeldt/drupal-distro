@@ -1,1 +1,13 @@
-$test: 'om';
+$white: #fff;
+$black: #000;
+
+$mb-blue: #00ADEF;
+
+$primary: $mb-blue;
+
+// general
+
+$body-bg: $black;
+$body-color: $white;
+$nav-link-color: $body-color;
+$nav-link-hover-color: $primary;

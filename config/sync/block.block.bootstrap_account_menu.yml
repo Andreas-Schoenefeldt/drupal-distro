@@ -1,4 +1,4 @@
-uuid: f63526f5-5a3a-469f-9a97-0661974406a3
+uuid: 5b6c3e2c-0f95-4956-92f4-b28caf94d476
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - olivero
+    - bootstrap
 _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
-id: olivero_account_menu
-theme: olivero
-region: secondary_menu
-weight: -4
+id: bootstrap_account_menu
+theme: bootstrap
+region: header
+weight: -1
 provider: null
 plugin: 'system_menu_block:account'
 settings:

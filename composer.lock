@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c234e3ba0adc8e52d47ff3d108a7d18",
+    "content-hash": "ead62d6c143c33cfc0125eb6bbf39185",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2321,6 +2321,30 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.18.0"
             },
             "time": "2024-02-22T17:51:05+00:00"
+        },
+        {
+            "name": "flowconcept/clarofixes",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flowconcept/clarofixes.git",
+                "reference": "9f8228cdfbf9175964f820cf81c8defccbf1f209"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "license": [
+                "UNLICENCED"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Schönefeldt",
+                    "email": "schoenefeldt.andreas@gmail.com"
+                }
+            ],
+            "description": "Drupal 9+ CSS injection, to bring the Claro admin Theme from \"Mobile Only\" to \"Also usable on desktop\"",
+            "time": "2024-05-06T13:49:48+00:00"
         },
         {
             "name": "grasmash/expander",

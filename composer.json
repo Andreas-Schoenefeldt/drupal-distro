@@ -8,12 +8,16 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "clarofixes": {
+            "type": "git",
+            "url": "https://github.com/flowconcept/clarofixes.git"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
@@ -26,6 +30,7 @@
         "drupal/pathauto": "^1.12",
         "drupal/svg_image": "^3.0",
         "drush/drush": "^12.5",
+        "flowconcept/clarofixes": "^1.0",
         "wikimedia/composer-merge-plugin": "^2.1"
     },
     "conflict": {
