@@ -1,0 +1,25 @@
+{
+  "name": "drupal-distro",
+  "version": "1.0.0",
+  "description": "A well functioning drupal distro based on a bootstrap theme",
+  "main": "web/index.php",
+  "scripts": {
+    "start": "php -v && cd ./web && echo \"starting http://distro.localhost:8108\" && php -S localhost:8108 .ht.router.php",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db_export": "./scripts/db-export.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andreas-Schoenefeldt/drupal-distro.git"
+  },
+  "keywords": [
+    "drupal",
+    "project"
+  ],
+  "author": "Andreas Schönefeldt",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Andreas-Schoenefeldt/drupal-distro/issues"
+  },
+  "homepage": "https://github.com/Andreas-Schoenefeldt/drupal-distro#readme"
+}
