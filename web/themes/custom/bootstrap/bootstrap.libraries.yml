@@ -1,7 +1,8 @@
 # Main theme library.
 global:
   js:
-    js/main.min.js: {}
+    js/bootstrap.bundle.min.js: {minified: true}
+    js/main.min.js: {minified: true}
   css:
     theme:
       css/bootstrap.min.css: { minified: true }

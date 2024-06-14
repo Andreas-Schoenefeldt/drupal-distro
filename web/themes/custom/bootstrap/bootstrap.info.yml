@@ -2,6 +2,7 @@ name: bootstrap
 type: theme
 description: A flexible theme with a responsive, mobile-first layout.
 package: Site
+base theme: false
 core_version_requirement: ^10
 libraries:
   - bootstrap/global
