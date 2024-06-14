@@ -53,7 +53,9 @@ settings.local.php
 # Ignore generated files
 .idea
 
-
 # Theme files
 /web/themes/custom/bootstrap/css/
 /web/themes/custom/bootstrap/js/
+
+# Node Modules
+node_modules
