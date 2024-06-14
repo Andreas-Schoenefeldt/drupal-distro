@@ -1,0 +1,52 @@
+# Ignore Drupal files
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.ht.router.php
+web/.htaccess
+web/INSTALL.txt
+web/README.txt
+web/autoload.php
+web/example.gitignore
+web/index.php
+web/modules/README.txt
+web/profiles/README.txt
+web/robots.txt
+web/sites/README.txt
+web/sites/default/default.services.yml
+web/sites/example.settings.local.php
+web/sites/example.sites.php
+web/themes/README.txt
+web/update.php
+web/web.config
+
+/vendor/
+
+# Ignore configuration files that may contain sensitive information.
+web/sites/*/settings*.php
+web/sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+web/sites/*/private
+private/*
+!private/.gitkeep
+
+# Ignore multi-site test environment.
+web/sites/simpletest
+
+# Ignore configuration overrides
+settings.local.php
+
+# OS
+.DS_Store
+
+# SQL Files
+*.sql
+*.sql.gz
+
+# .env
+.env
+
+# Ignore generated files
+.idea
