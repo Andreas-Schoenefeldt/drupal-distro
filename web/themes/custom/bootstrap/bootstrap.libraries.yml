@@ -1,0 +1,9 @@
+# Main theme library.
+global:
+  js:
+    js/main.min.js: {}
+  css:
+    theme:
+      css/bootstrap.min.css: { minified: true }
+      css/styles.min.css: { minified: true }
+

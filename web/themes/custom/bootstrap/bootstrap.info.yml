@@ -1,0 +1,14 @@
+name: bootstrap
+type: theme
+description: A flexible theme with a responsive, mobile-first layout.
+package: Site
+core_version_requirement: ^10
+libraries:
+  - bootstrap/global
+
+regions:
+  header: 'Header'
+  main_menu: 'Main Menu'
+  content: 'Content'
+  footer: 'Footer'
+  hidden: 'Hidden (not rendered on the page)'
