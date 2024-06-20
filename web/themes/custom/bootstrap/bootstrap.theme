@@ -27,3 +27,11 @@ function bootstrap_preprocess_page(array &$variables): void {
 function bootstrap_preprocess_node(array &$variables): void {
 
 }
+
+
+function bootstrap_preprocess_menu_local_task(&$variables) {
+
+  $isMainAction = in_array($variables['link']['#url']->getRouteName(), ['entity.node.edit_form']);
+
+  $variables['link']['#options']['attributes']['class'] = ['btn', $isMainAction ? 'btn-primary' : 'btn-outline-primary'];
+}
