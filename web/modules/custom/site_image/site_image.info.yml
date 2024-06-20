@@ -1,0 +1,10 @@
+name: 'Site Image'
+type: module
+description: 'Handling of responsive image paragraphs'
+package: site
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:responsive_image
+  - paragraphs:paragraphs
+  - focal_point:focal_point
+  - svg_image:svg_image

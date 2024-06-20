@@ -1,0 +1,10 @@
+uuid: 5a660a34-9f85-4347-86cd-41c3d12b5955
+langcode: en
+status: true
+dependencies: {  }
+id: image
+label: Image
+icon_uuid: null
+icon_default: null
+description: 'To add a responsive image.'
+behavior_plugins: {  }

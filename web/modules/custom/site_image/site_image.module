@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Site Image module.
+ */
+
+function site_image_theme() {
+  return [
+    'paragraph__image' => [
+      'template' => 'paragraph--image',
+      'base hook' => 'paragraph'
+    ]
+  ];
+}
