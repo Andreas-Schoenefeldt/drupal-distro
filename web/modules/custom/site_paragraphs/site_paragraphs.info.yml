@@ -1,7 +1,8 @@
 name: 'Site Paragraphs'
 type: module
 description: 'Responsive Paragraphs handling and optimization'
-package: Site
+package: site
 core_version_requirement: ^10 || ^11
 dependencies:
   - paragraphs:paragraphs
+  - paragraphs_edit:paragraphs_edit

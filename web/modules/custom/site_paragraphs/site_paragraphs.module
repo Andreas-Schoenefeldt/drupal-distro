@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Site Paragraphs module.
+ */
+
+/**
+ * Implements hook_preprocess().
+ */
+function site_paragraphs_preprocess_paragraph(&$variables) {
+
+  $paragraph = $variables['paragraph'];
+
+  if ($paragraph->getType() === 'container' && $paragraph->hasField('field_columns')) {
+
+    if (!$paragraph->field_columns->isEmpty()) {
+      $columns = explode('-', $paragraph->field_columns->value);
+    } else {
+      $columns = [12];
+    }
+
+    $count = count($columns);
+    $i = 0;
+    foreach ($paragraph->field_content as $key => $entity) {
+      $paragraph->field_content[$key]->entity->col_size = $columns[$i];
+      $paragraph->field_content[$key]->entity->col_class = 'col-md-' . $columns[$i];
+      ++$i;
+      if ($i === $count) {
+        $i = 0;
+      }
+    }
+  }
+
+  if (!empty($paragraph->col_size)) {
+    $variables['col_size'] = $paragraph->col_size;
+  }
+
+  if (!empty($paragraph->col_class)) {
+    $variables['col_class'] = $paragraph->col_class;
+    $variables['attributes']['class'][] = $paragraph->col_class;
+  }
+}
+
+function site_paragraphs_theme() {
+  return [
+    'field__field_content' => [
+      'template' => 'field--field-content',
+      'base hook' => 'field'
+    ],
+    'paragraph__container' => [
+      'template' => 'paragraph--container',
+      'base hook' => 'paragraph'
+    ]
+  ];
+}

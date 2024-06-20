@@ -28,6 +28,7 @@
         "drupal/field_group": "^3.4",
         "drupal/focal_point": "^2.1",
         "drupal/paragraphs": "^1.17",
+        "drupal/paragraphs_edit": "^3.0",
         "drupal/pathauto": "^1.12",
         "drupal/svg_image": "^3.0",
         "drush/drush": "^12.5",

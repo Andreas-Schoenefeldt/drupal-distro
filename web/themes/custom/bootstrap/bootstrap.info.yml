@@ -7,6 +7,9 @@ core_version_requirement: ^10
 libraries:
   - bootstrap/global
 
+dependencies:
+  site:site_paragraphs
+
 regions:
   header: 'Header'
   main_menu: 'Main Menu'

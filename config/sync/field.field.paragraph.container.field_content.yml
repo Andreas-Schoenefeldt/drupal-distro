@@ -11,7 +11,7 @@ id: paragraph.container.field_content
 field_name: field_content
 entity_type: paragraph
 bundle: container
-label: 'Collum Content'
+label: 'Column Content'
 description: ''
 required: false
 translatable: false
