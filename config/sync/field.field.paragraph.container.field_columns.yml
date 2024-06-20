@@ -1,16 +1,16 @@
-uuid: dc57a548-e426-4194-8da0-dc82dd97b13c
+uuid: b18f1a8c-77cb-4194-b7c0-4e1eb6c2c2de
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_columns
-    - paragraphs.paragraphs_type.wrapper
+    - paragraphs.paragraphs_type.container
   module:
     - options
-id: paragraph.wrapper.field_columns
+id: paragraph.container.field_columns
 field_name: field_columns
 entity_type: paragraph
-bundle: wrapper
+bundle: container
 label: Columns
 description: ''
 required: true

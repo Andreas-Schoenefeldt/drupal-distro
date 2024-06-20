@@ -1,17 +1,17 @@
-uuid: fcd5a718-1338-4b0f-9c25-443d9140e333
+uuid: 5872e4cc-967d-40ea-a8c5-c0ac53115f0e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_content
-    - paragraphs.paragraphs_type.wrapper
+    - paragraphs.paragraphs_type.container
   module:
     - entity_reference_revisions
-id: paragraph.wrapper.field_content
+id: paragraph.container.field_content
 field_name: field_content
 entity_type: paragraph
-bundle: wrapper
-label: Content
+bundle: container
+label: 'Collum Content'
 description: ''
 required: false
 translatable: false
@@ -21,10 +21,13 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      wrapper: wrapper
+      container: container
     negate: 1
     target_bundles_drag_drop:
-      wrapper:
-        weight: 2
+      container:
+        weight: 4
         enabled: true
+      text:
+        weight: 5
+        enabled: false
 field_type: entity_reference_revisions

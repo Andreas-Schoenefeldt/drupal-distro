@@ -1,16 +1,16 @@
-uuid: 69f36042-d995-4dad-8129-b6862b0a7980
+uuid: ec11773d-d2e8-4945-8943-2b6195603cc5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.wrapper.field_columns
-    - field.field.paragraph.wrapper.field_content
-    - paragraphs.paragraphs_type.wrapper
+    - field.field.paragraph.container.field_columns
+    - field.field.paragraph.container.field_content
+    - paragraphs.paragraphs_type.container
   module:
     - entity_reference_revisions
-id: paragraph.wrapper.default
+id: paragraph.container.default
 targetEntityType: paragraph
-bundle: wrapper
+bundle: container
 mode: default
 content:
   field_content:

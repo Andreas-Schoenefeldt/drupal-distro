@@ -1,0 +1,10 @@
+uuid: d03f901c-ea59-49ae-b539-a7668a674fbf
+langcode: en
+status: true
+dependencies: {  }
+id: container
+label: Container
+icon_uuid: null
+icon_default: null
+description: 'Provides a bootstrap content container.'
+behavior_plugins: {  }
