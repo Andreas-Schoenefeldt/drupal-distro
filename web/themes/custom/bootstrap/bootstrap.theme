@@ -42,6 +42,10 @@ function bootstrap_preprocess_status_messages(&$variables) {
   _test_container(\Drupal::routeMatch()->getParameter('node'), $variables);
 }
 
+function bootstrap_preprocess_breadcrumb(&$variables) {
+  _test_container(\Drupal::routeMatch()->getParameter('node'), $variables);
+}
+
 
 /**
  * @param NodeInterface $node

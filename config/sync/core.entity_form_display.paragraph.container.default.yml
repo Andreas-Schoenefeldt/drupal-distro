@@ -26,13 +26,13 @@ content:
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: open
+      edit_mode: closed
       closed_mode: preview
       autocollapse: none
-      closed_mode_threshold: 0
+      closed_mode_threshold: 2
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: text
+      default_paragraph_type: _none
       features:
         add_above: add_above
         collapse_edit_all: collapse_edit_all
