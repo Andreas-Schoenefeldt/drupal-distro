@@ -60,10 +60,10 @@
 
 {% block main %}
 <main class="site-main">
-  {% if not hide_container %}<div class="container">{% endif %}
+  {% if not use_paragraphs_container %}<div class="container">{% endif %}
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     {{ page.content }}
-  {% if not hide_container %}</div>{% endif %}
+  {% if not use_paragraphs_container %}</div>{% endif %}
 </main>
 {% endblock %}
 

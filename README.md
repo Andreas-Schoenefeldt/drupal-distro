@@ -16,6 +16,10 @@ A well functioning drupal distro based on a bootstrap 5 theme
 
 ## Deployments
 
+Folders that need to be persistent:
+* `./web/sites/default/files` - public user uploaded files
+* `./private` - user and system protected files
+
 The following commands have to be executed:
 
 ```shell

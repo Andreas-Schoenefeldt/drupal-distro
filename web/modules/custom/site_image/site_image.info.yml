@@ -8,3 +8,4 @@ dependencies:
   - paragraphs:paragraphs
   - focal_point:focal_point
   - svg_image:svg_image
+  - site:site_paragraphs

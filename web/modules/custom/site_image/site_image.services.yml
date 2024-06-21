@@ -1,0 +1,5 @@
+services:
+  site_image.twig.extension:
+    class: Drupal\site_image\Extension\TwigExtension
+    tags:
+      - { name: twig.extension }

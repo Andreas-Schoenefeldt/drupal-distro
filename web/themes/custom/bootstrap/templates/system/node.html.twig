@@ -68,21 +68,19 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
-  {% if not hide_container %}
-    {{ title_prefix }}
-  {% endif %}
+
+{% if not use_paragraphs_container %}<div {{ attributes }}>{{ title_prefix }}{% endif %}
   {% if label and not page %}
     <h2{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
   {% elseif label %}
-    {% if hide_container %}<div class="container">{% endif %}
+    {% if use_paragraphs_container %}<div class="container">{% endif %}
       <h1{{ title_attributes }}>{{ label }}</h1>
-    {% if hide_container %}</div>{% endif %}
+    {% if use_paragraphs_container %}</div>{% endif %}
   {% endif %}
 
-  {% if not hide_container %}
+  {% if not use_paragraphs_container %}
     {{ title_suffix }}
   {% endif %}
 
@@ -90,4 +88,4 @@
     {{ content }}
   </div>
 
-</article>
+  {% if not use_paragraphs_container %}</div>{% endif %}

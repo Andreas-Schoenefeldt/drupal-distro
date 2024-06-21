@@ -1,0 +1,21 @@
+uuid: 235f9608-60a0-4090-bbdc-a6dbb0c7e4ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_use_original_ratio
+    - paragraphs.paragraphs_type.image
+id: paragraph.image.field_use_original_ratio
+field_name: field_use_original_ratio
+entity_type: paragraph
+bundle: image
+label: 'Use original aspect ratio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

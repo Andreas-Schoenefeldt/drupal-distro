@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.image.field_image
+    - field.field.paragraph.image.field_use_original_ratio
     - paragraphs.paragraphs_type.image
 id: paragraph.image.default
 targetEntityType: paragraph
@@ -19,4 +20,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_use_original_ratio: true

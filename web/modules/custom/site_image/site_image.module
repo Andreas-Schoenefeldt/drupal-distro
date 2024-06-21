@@ -13,3 +13,63 @@ function site_image_theme() {
     ]
   ];
 }
+
+/**
+ * Limits the available sizes to a sensible group of examples from the potentially very high amount of image styles.
+ * @param $variables
+ */
+function site_image_preprocess_focal_point_preview_page (&$variables): void
+{
+
+  $renderedSizes = $variables['derivative_images'];
+  $filteredSizes = [];
+
+  $steps = 4; // amount of fractional steps, the aspect ratio is rounded to
+  $fractionToRound = 100 / $steps;
+
+  foreach (array_keys($renderedSizes) as $styleId) {
+    // extracting width and height from ths style id
+    preg_match_all('/sc_(\d+)x(\d+)/m', $styleId, $matches, PREG_SET_ORDER, 0);
+
+    if (count($matches)) {
+
+      $width = (int)$matches[0][1];
+      $height = (int)$matches[0][2];
+
+      $res = [
+        'id' => $styleId,
+        'width' => $width,
+        'height' => $height,
+        'style' => $renderedSizes[$styleId],
+      ];
+
+      // we round to the nearest .X step to group the available sizes together
+      $aspect = round($height / $width, 1) * 100;
+      // thx to https://stackoverflow.com/a/4133886/2776727
+      $aspect = round( $aspect / $fractionToRound ) * $fractionToRound / 100;
+
+      $key = $aspect . '';
+
+      $currentSize = $width * $height;
+      $existingSize = array_key_exists($key, $filteredSizes) ? $filteredSizes[$key]['width'] * $filteredSizes[$key]['height'] : $currentSize;
+
+      // take the smallest available sizes for faster rendering - the pictures are scaled down anyway in the template
+      if ($currentSize <= $existingSize) {
+        $filteredSizes[$key] = $res;
+      }
+    }
+  }
+
+  $filteredResult = [];
+  // generating human-readable names
+  foreach ($filteredSizes as $aspect => $res) {
+
+    $subStep = $aspect * 100 / $fractionToRound % $steps;
+    $name = $subStep ?  $steps .':' . $steps * $aspect  : '1:' . $aspect;
+
+    $res['style']['style'] = 'ca. ' . $name;
+    $filteredResult[$res['id']] = $res['style'];
+  }
+
+  $variables['derivative_images'] = $filteredResult;
+}
