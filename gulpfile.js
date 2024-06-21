@@ -16,6 +16,7 @@ import scss from "gulp-dart-sass";
 import autoprefixer from "gulp-autoprefixer";
 import cssnano from "gulp-cssnano";
 import gulpif from "gulp-if";
+import gen from 'drupal-image-style-generator';
 
 let MODE = 'dev';
 
@@ -128,13 +129,13 @@ function watchFiles() {
 export default gulp.series(set_dev, clear, gulp.parallel(library_copy, js, css_bs, css), gulp.parallel(watchFiles));
 
 export function generate_image_styles(done) {
-  const gen = require('drupal-image-style-generator');
 
   gen({
     themePath: themePath,
     themeName: themeName,
     syncFolder: './config/sync',
-    gridSize: 50,
+    gridSize: 10,
+    convertTo: 'webp'
   })
 
   done();

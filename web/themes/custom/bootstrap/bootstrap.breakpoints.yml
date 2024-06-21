@@ -1,30 +1,228 @@
-bootstrap.extra_small:
-  label: mobile
-  mediaQuery: ''
+# this file is extended in a non standard way to automatically generate responsive image styles using `gulp generate_image_styles`
+# aspect is height/width and pushed upwards through the breakpoints, unless defined otherwise
+#
+default.xs: # mobile phones
+  label: XS
+  mediaQuery: '(max-width: 575px)'
   weight: 0
   multipliers:
     - 1x
-bootstrap.small:
-  label: mobile
-  mediaQuery: 'all and (min-width: 576px) and (max-width: 767px)'
-  weight: 1
-  multipliers:
-    - 1x
-bootstrap.medium:
-  label: narrow
-  mediaQuery: 'all and (min-width: 768px) and (max-width: 991px)'
+    - 2x
+  imageStyles:
+    col_3:
+      label: 'Col 3'
+      aspectRatio: 1
+      width: 545
+    col_3_original:
+      label: 'Col 3 Original'
+      width: 545
+    col_4:
+      label: 'Col 4'
+      aspectRatio: 1
+      width: 545
+    col_4_original:
+      label: 'Col 4 Original'
+      width: 545
+    col_5:
+      label: 'Col 5'
+      aspectRatio: 1
+      width: 545
+    col_5_original:
+      label: 'Col 5 Original'
+      width: 545
+    col_6:
+      label: 'Col 6'
+      aspectRatio: 0.7
+      width: 545
+    col_6_original:
+      label: 'Col 6 Original'
+      width: 545
+    col_7:
+      label: 'Col 7'
+      aspectRatio: 0.7
+      width: 545
+    col_7_original:
+      label: 'Col 7 Original'
+      width: 545
+    col_8:
+      label: 'Col 8'
+      aspectRatio: 0.48
+      width: 545
+    col_8_original:
+      label: 'Col 8 Original'
+      width: 545
+    col_9:
+      label: 'Col 9'
+      aspectRatio: 0.29
+      width: 545
+    col_9_original:
+      label: 'Col 9 Original'
+      width: 545
+    col_12:
+      label: 'Col 12'
+      aspectRatio: 0.33
+      width: 545
+    col_12_original:
+      label: 'Col 12 Original'
+      width: 545
+default.md: # large tablets
+  label: MD
+  mediaQuery: '(min-width: 768px) and (max-width: 991px)'
   weight: 2
   multipliers:
     - 1x
-bootstrap.large:
-  label: wide
-  mediaQuery: 'all and (min-width: 992px) and (max-width: 1199px)'
+    - 2x
+  imageStyles:
+    # assuming, that the breakpoint is at md
+    col_3:
+      width: 150
+    col_3_original:
+      width: 150
+    col_4:
+      width: 210
+    col_4_original:
+      width: 210
+    col_5:
+      width: 270
+    col_5_original:
+      width: 270
+    col_6:
+      width: 330
+    col_6_original:
+      width: 330
+    col_7:
+      width: 390
+    col_7_original:
+      width: 390
+    col_8:
+      width: 450
+    col_8_original:
+      width: 450
+    col_9:
+      width: 510
+    col_9_original:
+      width: 510
+    col_12:
+      width: 690
+    col_12_original:
+      width: 690
+default.lg: # desktop
+  label: LG
+  mediaQuery: '(min-width: 992px) and (max-width: 1199px)'
   weight: 3
   multipliers:
     - 1x
-bootstrap.extra_large:
-  label: wide
-  mediaQuery: 'all and (min-width: 1200px)'
+    - 2x
+  imageStyles:
+    col_3:
+      width: 210
+    col_3_original:
+      width: 210
+    col_4:
+      width: 290
+    col_4_original:
+      width: 290
+    col_5:
+      width: 370
+    col_5_original:
+      width: 370
+    col_6:
+      width: 450
+    col_6_original:
+      width: 450
+    col_7:
+      width: 530
+    col_7_original:
+      width: 530
+    col_8:
+      width: 610
+    col_8_original:
+      width: 610
+    col_9:
+      width: 690
+    col_9_original:
+      width: 690
+    col_12:
+      width: 930
+    col_12_original:
+      width: 930
+default.xl: # large desktop
+  label: XL
+  mediaQuery: '(min-width: 1200px) and (max-width: 1399px)'
   weight: 4
   multipliers:
     - 1x
+    - 2x
+  imageStyles:
+    col_3:
+      width: 255
+    col_3_original:
+      width: 255
+    col_4:
+      width: 350
+    col_4_original:
+      width: 350
+    col_5:
+      width: 445
+    col_5_original:
+      width: 445
+    col_6:
+      width: 540
+    col_6_original:
+      width: 540
+    col_7:
+      width: 635
+    col_7_original:
+      width: 635
+    col_8:
+      width: 730
+    col_8_original:
+      width: 730
+    col_9:
+      width: 825
+    col_9_original:
+      width: 825
+    col_12:
+      width: 1110
+    col_12_original:
+      width: 1110
+default.xxl: # large desktop
+  label: XXL
+  mediaQuery: '(min-width: 1400px)'
+  weight: 5
+  multipliers:
+    - 1x
+    - 2x
+  imageStyles:
+    col_3:
+      width: 300
+    col_3_original:
+      width: 300
+    col_4:
+      width: 410
+    col_4_original:
+      width: 410
+    col_5:
+      width: 520
+    col_5_original:
+      width: 520
+    col_6:
+      width: 630
+    col_6_original:
+      width: 630
+    col_7:
+      width: 740
+    col_7_original:
+      width: 740
+    col_8:
+      width: 850
+    col_8_original:
+      width: 850
+    col_9:
+      width: 960
+    col_9_original:
+      width: 960
+    col_12:
+      width: 1290
+    col_12_original:
+      width: 1290

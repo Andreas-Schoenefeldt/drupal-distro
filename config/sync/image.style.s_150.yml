@@ -1,0 +1,21 @@
+uuid: 618e5fa1-047c-46d5-847f-0036a122d594
+langcode: de
+status: true
+dependencies: {  }
+name: s_150
+label: 'Scale 150'
+effects:
+  0fdd65b2-9a20-42c1-ab33-b0e876784eeb:
+    uuid: 0fdd65b2-9a20-42c1-ab33-b0e876784eeb
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  b766efd9-4bc8-4d8f-955e-fc569de8660b:
+    uuid: b766efd9-4bc8-4d8f-955e-fc569de8660b
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: null
+      upscale: false

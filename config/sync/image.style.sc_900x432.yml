@@ -1,0 +1,23 @@
+uuid: 637c90de-6b0d-470f-87c4-4712d8bbafda
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_900x432
+label: 'Scale and Crop 900 x 432'
+effects:
+  eb3eb7e9-5c38-455a-88b9-8355fdfe7cef:
+    uuid: eb3eb7e9-5c38-455a-88b9-8355fdfe7cef
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  d79d36c7-a436-40dc-ac53-515ad17886f1:
+    uuid: d79d36c7-a436-40dc-ac53-515ad17886f1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 432
+      crop_type: focal_point

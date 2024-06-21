@@ -1,0 +1,23 @@
+uuid: 01e9c026-8ade-4238-821a-ee73d33efd4f
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_390x273
+label: 'Scale and Crop 390 x 273'
+effects:
+  f513d96b-f84b-4965-a2a2-86731cfecf93:
+    uuid: f513d96b-f84b-4965-a2a2-86731cfecf93
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  8d510771-0502-41b5-80c5-07997eeefe19:
+    uuid: 8d510771-0502-41b5-80c5-07997eeefe19
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 390
+      height: 273
+      crop_type: focal_point

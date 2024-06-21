@@ -1,0 +1,21 @@
+uuid: f935fa8e-04ac-453c-b715-58c37016c95c
+langcode: de
+status: true
+dependencies: {  }
+name: s_700
+label: 'Scale 700'
+effects:
+  da016a98-8056-42b5-aaa4-6dfe246b2a1f:
+    uuid: da016a98-8056-42b5-aaa4-6dfe246b2a1f
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  78f73b0f-e641-4524-a3fd-e0d58e14c53e:
+    uuid: 78f73b0f-e641-4524-a3fd-e0d58e14c53e
+    id: image_scale
+    weight: 1
+    data:
+      width: 700
+      height: null
+      upscale: false

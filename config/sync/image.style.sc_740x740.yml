@@ -1,0 +1,23 @@
+uuid: a0a06f36-2ea5-435f-9261-314a2facb31e
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_740x740
+label: 'Scale and Crop 740 x 740'
+effects:
+  0ac5d649-9d23-479f-a466-0be5b30a3683:
+    uuid: 0ac5d649-9d23-479f-a466-0be5b30a3683
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  ccbb90b0-a4b5-43f9-a6d0-0afff4e3665c:
+    uuid: ccbb90b0-a4b5-43f9-a6d0-0afff4e3665c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 740
+      height: 740
+      crop_type: focal_point

@@ -1,0 +1,21 @@
+uuid: 90fda15a-a2ef-4396-b869-a52210a33715
+langcode: de
+status: true
+dependencies: {  }
+name: s_1220
+label: 'Scale 1220'
+effects:
+  0196db30-9e97-41d4-bb0e-bd7b41643939:
+    uuid: 0196db30-9e97-41d4-bb0e-bd7b41643939
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  18902006-9810-4a6d-bb6d-bd6fc4d811e5:
+    uuid: 18902006-9810-4a6d-bb6d-bd6fc4d811e5
+    id: image_scale
+    weight: 1
+    data:
+      width: 1220
+      height: null
+      upscale: false

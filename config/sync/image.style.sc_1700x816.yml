@@ -1,0 +1,23 @@
+uuid: faf42170-db33-49f5-9109-f33de62c6e0b
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1700x816
+label: 'Scale and Crop 1700 x 816'
+effects:
+  97f089d0-6eeb-4566-b7f9-4aec9d7fd2f8:
+    uuid: 97f089d0-6eeb-4566-b7f9-4aec9d7fd2f8
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  ba5ef039-d445-4879-a8ff-4035c77d3ed5:
+    uuid: ba5ef039-d445-4879-a8ff-4035c77d3ed5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1700
+      height: 816
+      crop_type: focal_point

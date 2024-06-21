@@ -1,0 +1,21 @@
+uuid: 5f989f7b-6feb-466e-b2ad-20caf9faa5ec
+langcode: de
+status: true
+dependencies: {  }
+name: s_450
+label: 'Scale 450'
+effects:
+  ec37f2f2-e401-4147-926b-83810171ec4a:
+    uuid: ec37f2f2-e401-4147-926b-83810171ec4a
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  ad5663e5-f4be-4112-a79d-7d7fc52a6d2d:
+    uuid: ad5663e5-f4be-4112-a79d-7d7fc52a6d2d
+    id: image_scale
+    weight: 1
+    data:
+      width: 450
+      height: null
+      upscale: false

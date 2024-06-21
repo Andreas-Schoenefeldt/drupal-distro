@@ -1,0 +1,72 @@
+uuid: 8955ad92-4ed6-4cbd-98b9-f6d3e6fb54b7
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.sc_550x160
+    - image.style.sc_1100x319
+    - image.style.sc_510x148
+    - image.style.sc_1020x296
+    - image.style.sc_690x200
+    - image.style.sc_1380x400
+    - image.style.sc_830x241
+    - image.style.sc_1660x481
+    - image.style.sc_960x278
+    - image.style.sc_1920x557
+  theme:
+    - bootstrap
+id: col_9
+label: 'Col 9'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_960x278
+    breakpoint_id: default.xxl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_1920x557
+    breakpoint_id: default.xxl
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_830x241
+    breakpoint_id: default.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_1660x481
+    breakpoint_id: default.xl
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_690x200
+    breakpoint_id: default.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_1380x400
+    breakpoint_id: default.lg
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_510x148
+    breakpoint_id: default.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_1020x296
+    breakpoint_id: default.md
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_550x160
+    breakpoint_id: default.xs
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: sc_1100x319
+    breakpoint_id: default.xs
+    multiplier: 2x
+breakpoint_group: bootstrap
+fallback_image_style: sc_550x160

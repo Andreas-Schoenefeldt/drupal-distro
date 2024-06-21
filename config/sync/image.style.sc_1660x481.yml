@@ -1,0 +1,23 @@
+uuid: bd2207eb-6b7e-4225-8a02-a6b65d032f01
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1660x481
+label: 'Scale and Crop 1660 x 481'
+effects:
+  ce342d39-808a-4423-a5cf-5e50521ec3ba:
+    uuid: ce342d39-808a-4423-a5cf-5e50521ec3ba
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  2c2dfd3a-7645-43dc-af53-75e53f59d193:
+    uuid: 2c2dfd3a-7645-43dc-af53-75e53f59d193
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1660
+      height: 481
+      crop_type: focal_point

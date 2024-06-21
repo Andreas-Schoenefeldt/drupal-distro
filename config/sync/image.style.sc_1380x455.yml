@@ -1,0 +1,23 @@
+uuid: 71c88ea9-4656-4f39-83a0-64be613607c7
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1380x455
+label: 'Scale and Crop 1380 x 455'
+effects:
+  1b89d839-9b36-4c0c-8f43-e8b7a92a9763:
+    uuid: 1b89d839-9b36-4c0c-8f43-e8b7a92a9763
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  27b05439-9d1e-4283-a95f-c0e5e2f2a0d6:
+    uuid: 27b05439-9d1e-4283-a95f-c0e5e2f2a0d6
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1380
+      height: 455
+      crop_type: focal_point

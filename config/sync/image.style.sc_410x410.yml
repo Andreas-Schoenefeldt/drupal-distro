@@ -1,0 +1,23 @@
+uuid: dda557d0-5ddd-4781-a855-fa25f5ccd7cd
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_410x410
+label: 'Scale and Crop 410 x 410'
+effects:
+  007d224d-c709-4ab2-9291-a6f5cb0efd3d:
+    uuid: 007d224d-c709-4ab2-9291-a6f5cb0efd3d
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  e15b5fc9-c632-413e-bb2c-d2d4c0973e55:
+    uuid: e15b5fc9-c632-413e-bb2c-d2d4c0973e55
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 410
+      height: 410
+      crop_type: focal_point

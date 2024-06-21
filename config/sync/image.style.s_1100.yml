@@ -1,0 +1,21 @@
+uuid: e8317d03-c1d4-446e-8b11-38d900bf1883
+langcode: de
+status: true
+dependencies: {  }
+name: s_1100
+label: 'Scale 1100'
+effects:
+  18a766be-e3fb-437d-bb35-aa360c58bb44:
+    uuid: 18a766be-e3fb-437d-bb35-aa360c58bb44
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  6261b04e-d70c-4297-af7a-28245f8654e8:
+    uuid: 6261b04e-d70c-4297-af7a-28245f8654e8
+    id: image_scale
+    weight: 1
+    data:
+      width: 1100
+      height: null
+      upscale: false

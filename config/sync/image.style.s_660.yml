@@ -1,0 +1,21 @@
+uuid: a6457a3c-74ab-4776-b4b9-4be4b145b007
+langcode: de
+status: true
+dependencies: {  }
+name: s_660
+label: 'Scale 660'
+effects:
+  4f99a5cd-bf1f-41c1-9718-8722bab44d64:
+    uuid: 4f99a5cd-bf1f-41c1-9718-8722bab44d64
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  4502932b-a824-4f3e-b0e3-a26854c5af92:
+    uuid: 4502932b-a824-4f3e-b0e3-a26854c5af92
+    id: image_scale
+    weight: 1
+    data:
+      width: 660
+      height: null
+      upscale: false

@@ -1,0 +1,23 @@
+uuid: 29dde910-a019-403f-bc91-490cc4b15e89
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_510x148
+label: 'Scale and Crop 510 x 148'
+effects:
+  ad2e3b79-123b-4441-8f82-c04912b2bd46:
+    uuid: ad2e3b79-123b-4441-8f82-c04912b2bd46
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  56a7354c-5f76-4748-9994-cdb1447a5154:
+    uuid: 56a7354c-5f76-4748-9994-cdb1447a5154
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 510
+      height: 148
+      crop_type: focal_point

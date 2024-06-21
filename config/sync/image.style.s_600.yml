@@ -1,0 +1,21 @@
+uuid: 9724d96a-e4f5-4c2f-8f07-56f99d1e689b
+langcode: de
+status: true
+dependencies: {  }
+name: s_600
+label: 'Scale 600'
+effects:
+  169d2cbd-9d21-48db-87c0-586697fb1ccb:
+    uuid: 169d2cbd-9d21-48db-87c0-586697fb1ccb
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  511ba195-dae7-4b93-a660-23af5c1e3879:
+    uuid: 511ba195-dae7-4b93-a660-23af5c1e3879
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false

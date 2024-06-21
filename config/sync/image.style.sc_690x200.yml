@@ -1,0 +1,23 @@
+uuid: b66d4b59-5c84-4375-9e56-c3e3bc6f0901
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_690x200
+label: 'Scale and Crop 690 x 200'
+effects:
+  55641d85-e91b-412a-8d87-a50df97470a0:
+    uuid: 55641d85-e91b-412a-8d87-a50df97470a0
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  aa568d01-7d6f-4aef-9df3-0a049005cdd3:
+    uuid: aa568d01-7d6f-4aef-9df3-0a049005cdd3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 690
+      height: 200
+      crop_type: focal_point

@@ -1,0 +1,23 @@
+uuid: 8d8ffc10-8ac8-487f-ada4-4b15bb0ce50c
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1860x614
+label: 'Scale and Crop 1860 x 614'
+effects:
+  9a64c8a5-1ed2-4f87-98fd-ec6b9adafac5:
+    uuid: 9a64c8a5-1ed2-4f87-98fd-ec6b9adafac5
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  b37c1a25-0b35-49d3-82e6-5002f3ded66d:
+    uuid: b37c1a25-0b35-49d3-82e6-5002f3ded66d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1860
+      height: 614
+      crop_type: focal_point

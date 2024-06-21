@@ -1,0 +1,23 @@
+uuid: b700366f-ea45-4018-8b5f-09849add6a94
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_780x546
+label: 'Scale and Crop 780 x 546'
+effects:
+  d88c4f62-987c-4b4e-99d7-2a768891752a:
+    uuid: d88c4f62-987c-4b4e-99d7-2a768891752a
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  11fba8b1-b71f-4915-9304-96dcb9b27673:
+    uuid: 11fba8b1-b71f-4915-9304-96dcb9b27673
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 780
+      height: 546
+      crop_type: focal_point

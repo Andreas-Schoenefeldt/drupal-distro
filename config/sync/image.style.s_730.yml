@@ -1,0 +1,21 @@
+uuid: d6a480ad-5d8b-4272-91af-f193c37b3c1e
+langcode: de
+status: true
+dependencies: {  }
+name: s_730
+label: 'Scale 730'
+effects:
+  afeb6451-b370-4902-986c-14871b2c39f5:
+    uuid: afeb6451-b370-4902-986c-14871b2c39f5
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  2a9468cd-0b0b-4d3d-918d-49ea3dae07b9:
+    uuid: 2a9468cd-0b0b-4d3d-918d-49ea3dae07b9
+    id: image_scale
+    weight: 1
+    data:
+      width: 730
+      height: null
+      upscale: false

@@ -1,0 +1,21 @@
+uuid: 8c7dee9d-884f-400c-92c9-169d7071625c
+langcode: de
+status: true
+dependencies: {  }
+name: s_420
+label: 'Scale 420'
+effects:
+  8f980752-7acf-499f-a2c8-803c37f915f0:
+    uuid: 8f980752-7acf-499f-a2c8-803c37f915f0
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  cf07e5af-645f-4aa1-9e08-e431ab1282ae:
+    uuid: cf07e5af-645f-4aa1-9e08-e431ab1282ae
+    id: image_scale
+    weight: 1
+    data:
+      width: 420
+      height: null
+      upscale: false

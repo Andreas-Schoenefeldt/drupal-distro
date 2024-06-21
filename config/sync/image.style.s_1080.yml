@@ -1,0 +1,21 @@
+uuid: ac0b8cb9-6bdd-4dc8-9ec8-7ccf32b4cf53
+langcode: de
+status: true
+dependencies: {  }
+name: s_1080
+label: 'Scale 1080'
+effects:
+  a2fd8158-7523-43b9-8a99-7f760764724e:
+    uuid: a2fd8158-7523-43b9-8a99-7f760764724e
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  cbbd4320-8b6b-4e24-af97-d661f6dba440:
+    uuid: cbbd4320-8b6b-4e24-af97-d661f6dba440
+    id: image_scale
+    weight: 1
+    data:
+      width: 1080
+      height: null
+      upscale: false

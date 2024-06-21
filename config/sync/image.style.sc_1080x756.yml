@@ -1,0 +1,23 @@
+uuid: 182f3751-ac8f-447e-81fb-1445df2dda56
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1080x756
+label: 'Scale and Crop 1080 x 756'
+effects:
+  d463bb65-9d85-4c26-81b8-d535b94dccc2:
+    uuid: d463bb65-9d85-4c26-81b8-d535b94dccc2
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  d41c4c17-e5d9-41d7-a1ac-06b80519f79b:
+    uuid: d41c4c17-e5d9-41d7-a1ac-06b80519f79b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 756
+      crop_type: focal_point

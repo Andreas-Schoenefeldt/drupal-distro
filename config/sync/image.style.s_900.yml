@@ -1,0 +1,21 @@
+uuid: 5678778a-3df1-400d-8de5-1130a4da7da0
+langcode: de
+status: true
+dependencies: {  }
+name: s_900
+label: 'Scale 900'
+effects:
+  a4c3c74e-a17a-466a-94d3-5962aaa53aa5:
+    uuid: a4c3c74e-a17a-466a-94d3-5962aaa53aa5
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  54ca7275-7f1d-4055-a514-49455fc80b10:
+    uuid: 54ca7275-7f1d-4055-a514-49455fc80b10
+    id: image_scale
+    weight: 1
+    data:
+      width: 900
+      height: null
+      upscale: false

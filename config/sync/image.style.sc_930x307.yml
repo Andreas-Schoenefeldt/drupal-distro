@@ -1,0 +1,23 @@
+uuid: 77172e27-116c-4d12-889b-4aabb9001f2a
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_930x307
+label: 'Scale and Crop 930 x 307'
+effects:
+  2af0b148-515a-45cb-8374-dc921f5eb225:
+    uuid: 2af0b148-515a-45cb-8374-dc921f5eb225
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  43b9eb30-01ff-4f9b-a48f-76580b4e79e3:
+    uuid: 43b9eb30-01ff-4f9b-a48f-76580b4e79e3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 930
+      height: 307
+      crop_type: focal_point

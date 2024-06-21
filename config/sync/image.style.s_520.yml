@@ -1,0 +1,21 @@
+uuid: fc77f8bc-f3cc-43d8-a13a-983841e0f663
+langcode: de
+status: true
+dependencies: {  }
+name: s_520
+label: 'Scale 520'
+effects:
+  c956e937-2f9a-4a73-bb25-a7485f283153:
+    uuid: c956e937-2f9a-4a73-bb25-a7485f283153
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  cfdce136-5207-4114-bb96-20097124c3a2:
+    uuid: cfdce136-5207-4114-bb96-20097124c3a2
+    id: image_scale
+    weight: 1
+    data:
+      width: 520
+      height: null
+      upscale: false

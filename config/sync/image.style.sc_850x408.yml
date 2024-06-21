@@ -1,0 +1,23 @@
+uuid: 221a6138-cb87-4dbc-af87-08862d7b7720
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_850x408
+label: 'Scale and Crop 850 x 408'
+effects:
+  5cee80f4-413d-47e6-83d9-2135f61732d9:
+    uuid: 5cee80f4-413d-47e6-83d9-2135f61732d9
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  80396d30-9d68-480f-b12a-ed136a7e3223:
+    uuid: 80396d30-9d68-480f-b12a-ed136a7e3223
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 850
+      height: 408
+      crop_type: focal_point

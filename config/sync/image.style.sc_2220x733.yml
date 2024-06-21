@@ -1,0 +1,23 @@
+uuid: b86c0f13-09db-4204-8b63-e711b7101d9e
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_2220x733
+label: 'Scale and Crop 2220 x 733'
+effects:
+  5062749f-eca6-4083-831a-05c045becabc:
+    uuid: 5062749f-eca6-4083-831a-05c045becabc
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  80839f1f-b57a-4d70-b59d-e7c561b99c6b:
+    uuid: 80839f1f-b57a-4d70-b59d-e7c561b99c6b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2220
+      height: 733
+      crop_type: focal_point

@@ -1,0 +1,21 @@
+uuid: ed9207ed-6216-49b9-86b5-7fea83626646
+langcode: de
+status: true
+dependencies: {  }
+name: s_260
+label: 'Scale 260'
+effects:
+  966e4cbd-8d7e-4e46-bfd5-fe4037f26439:
+    uuid: 966e4cbd-8d7e-4e46-bfd5-fe4037f26439
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  458c9472-ac77-4d0f-abd6-4c3ec37c566f:
+    uuid: 458c9472-ac77-4d0f-abd6-4c3ec37c566f
+    id: image_scale
+    weight: 1
+    data:
+      width: 260
+      height: null
+      upscale: false

@@ -1,0 +1,23 @@
+uuid: 9c9cb2bc-b7fb-4b85-98ff-f5d28fbf59e4
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1020x296
+label: 'Scale and Crop 1020 x 296'
+effects:
+  503ecebf-706d-4e96-a7c5-902d03ddfc68:
+    uuid: 503ecebf-706d-4e96-a7c5-902d03ddfc68
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  cd46fce3-0d52-4522-91a5-406566269f00:
+    uuid: cd46fce3-0d52-4522-91a5-406566269f00
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1020
+      height: 296
+      crop_type: focal_point

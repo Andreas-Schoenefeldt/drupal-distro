@@ -1,0 +1,23 @@
+uuid: e0ebe64f-40c4-42ce-bc28-3c6f41cacee6
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_550x550
+label: 'Scale and Crop 550 x 550'
+effects:
+  546be9be-38ed-404e-a1e5-7e884613784d:
+    uuid: 546be9be-38ed-404e-a1e5-7e884613784d
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  20998372-dbe5-4639-b953-f45dcc701403:
+    uuid: 20998372-dbe5-4639-b953-f45dcc701403
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 550
+      height: 550
+      crop_type: focal_point

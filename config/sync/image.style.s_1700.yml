@@ -1,0 +1,21 @@
+uuid: 274a7861-cf14-4f87-9cd6-349ebbfaed1c
+langcode: de
+status: true
+dependencies: {  }
+name: s_1700
+label: 'Scale 1700'
+effects:
+  161529bd-4b21-4c60-9e97-e01670858cac:
+    uuid: 161529bd-4b21-4c60-9e97-e01670858cac
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  5ef73c6b-14a5-4456-ba1e-2e0445c883cb:
+    uuid: 5ef73c6b-14a5-4456-ba1e-2e0445c883cb
+    id: image_scale
+    weight: 1
+    data:
+      width: 1700
+      height: null
+      upscale: false

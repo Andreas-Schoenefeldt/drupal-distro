@@ -1,0 +1,21 @@
+uuid: cc4114c3-65b8-4cff-a9da-52dc538a4127
+langcode: de
+status: true
+dependencies: {  }
+name: s_1290
+label: 'Scale 1290'
+effects:
+  653acb98-c2b0-4b5b-a485-881be15b8ce8:
+    uuid: 653acb98-c2b0-4b5b-a485-881be15b8ce8
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  0bdf70d0-51a4-4ac1-948d-284be8ee1e29:
+    uuid: 0bdf70d0-51a4-4ac1-948d-284be8ee1e29
+    id: image_scale
+    weight: 1
+    data:
+      width: 1290
+      height: null
+      upscale: false
