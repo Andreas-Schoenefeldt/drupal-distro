@@ -24,6 +24,7 @@ function site_paragraphs_form_alter(&$form, FormStateInterface $form_state, $for
 function site_paragraphs_preprocess_paragraph(&$variables) {
 
   $paragraph = $variables['paragraph'];
+  $variables['attributes']['class'][] = 'js-target--' . $paragraph->getType();
 
   if ($paragraph->getType() === 'container' && $paragraph->hasField('field_columns')) {
 

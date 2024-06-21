@@ -53,9 +53,16 @@ settings.local.php
 # Ignore generated files
 .idea
 
-# Theme files
+# Theme & Module files
 /web/themes/custom/bootstrap/css/
 /web/themes/custom/bootstrap/js/
+/web/modules/custom/site_paragraphs/css/
+!/web/modules/custom/site_paragraphs/css/.gitkeep
+/web/modules/custom/site_gallery/css/
+!/web/modules/custom/site_gallery/css/.gitkeep
+/web/modules/custom/site_gallery/js/
+!/web/modules/custom/site_gallery/js/.gitkeep
+!/web/modules/custom/site_gallery/js/main.js
 
 # Node Modules
 node_modules

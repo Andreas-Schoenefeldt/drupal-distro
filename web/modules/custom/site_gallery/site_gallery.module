@@ -4,3 +4,27 @@
  * @file
  * Primary module hooks for site_gallery module.
  */
+
+function site_gallery_theme() {
+  return [
+    'paragraph__gallery' => [
+      'template' => 'paragraph--gallery',
+      'base hook' => 'paragraph'
+    ]
+  ];
+}
+
+function site_gallery_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+
+  if ($paragraph->getType() === 'gallery') {
+    foreach ($paragraph->field_content as $key => $entity) {
+      $paragraph->field_content[$key]->entity->col_size = $paragraph->col_size;
+      $paragraph->field_content[$key]->entity->is_slide = true;
+    }
+  }
+
+  if ($paragraph->is_slide) {
+    $variables['attributes']['class'][] = 'swiper-slide';
+  }
+}

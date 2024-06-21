@@ -1,0 +1,10 @@
+uuid: 62dca896-ecf2-4fdf-b6b9-3308ffdd7ef7
+langcode: en
+status: true
+dependencies: {  }
+id: gallery
+label: Gallery
+icon_uuid: null
+icon_default: null
+description: 'A image gallery widget powered by <a href="https://swiperjs.com/" target="_blank">swiper.js</a>.'
+behavior_plugins: {  }

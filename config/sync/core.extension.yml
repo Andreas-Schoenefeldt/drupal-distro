@@ -45,6 +45,7 @@ module:
   responsive_image: 0
   search: 0
   shortcut: 0
+  site_gallery: 0
   site_image: 0
   site_paragraphs: 0
   svg_image: 0

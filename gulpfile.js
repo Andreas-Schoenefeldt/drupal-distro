@@ -64,7 +64,10 @@ async function copyTo(src, dest) {
 function library_copy(done) {
   const files = {
     './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js': themePath + '/js/bootstrap.bundle.min.js',
-    './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map': themePath + '/js/bootstrap.bundle.min.js.map'
+    './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map': themePath + '/js/bootstrap.bundle.min.js.map',
+    './node_modules/swiper/swiper-bundle.min.css': './web/modules/custom/site_gallery/css/swiper-bundle.min.css',
+    './node_modules/swiper/swiper-bundle.min.js': './web/modules/custom/site_gallery/js/swiper-bundle.min.js',
+    './node_modules/swiper/swiper-bundle.min.js.map': './web/modules/custom/site_gallery/js/swiper-bundle.min.js.map',
   }
 
   const length = Object.keys(files).length;
