@@ -93,7 +93,7 @@ function js() {
     .pipe(gulp.dest(themePath + '/js/'));
 }
 
-function doCss(source) {
+function doCss(source, destinationFolder) {
 
   // source filesa re for some reason here included into the css file and not as a seperate one, that's wy we distinguish between DEV and PROD mode
   return gulp.src(source, { sourcemaps: MODE === 'dev' })
@@ -109,24 +109,32 @@ function doCss(source) {
     }))
     .pipe(cssnano({zindex: false})) // otherwise the z-index is rewritten to lower numbers
     .pipe(gulpif(MODE === 'dev', sourcemaps.write()))
-    .pipe(gulp.dest(themePath + '/css/'));
+    .pipe(gulp.dest(destinationFolder));
 }
 
 function css() {
-  return doCss(themePath + '/assets/scss/*.scss');
+  return doCss(themePath + '/assets/scss/*.scss', themePath + '/css/');
 }
 
 function css_bs() {
-  return doCss(themePath + '/assets/bootstrap/*.scss');
+  return doCss(themePath + '/assets/bootstrap/*.scss', themePath + '/css/');
+}
+
+function css_para() {
+  return doCss(
+    './web/modules/custom/site_paragraphs/assets/scss/*.scss',
+    './web/modules/custom/site_paragraphs/css/'
+  );
 }
 
 function watchFiles() {
   gulp.watch('assets/scss/**/*', {cwd: themePath}, css);
   gulp.watch(['assets/bootstrap/**/*', 'assets/scss/_variables.scss'], {cwd: themePath}, css_bs);
+  gulp.watch([themePath + '/assets/scss/_variables.scss', './web/modules/custom/site_paragraphs/assets/scss/**/*'], {}, css_para);
   gulp.watch('assets/js/**/*', {cwd: themePath}, js);
 }
 
-export default gulp.series(set_dev, clear, gulp.parallel(library_copy, js, css_bs, css), gulp.parallel(watchFiles));
+export default gulp.series(set_dev, clear, gulp.parallel(library_copy, js, css_bs, css_para, css), gulp.parallel(watchFiles));
 
 export function generate_image_styles(done) {
 

@@ -1,0 +1,4 @@
+preview:
+  css:
+    theme:
+      css/paragraphs-preview.min.css: { minified: true }

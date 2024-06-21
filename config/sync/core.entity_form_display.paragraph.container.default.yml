@@ -24,10 +24,10 @@ content:
     weight: 1
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Widget
+      title_plural: Widgets
       edit_mode: closed
-      closed_mode: preview
+      closed_mode: summary
       autocollapse: none
       closed_mode_threshold: 2
       add_mode: dropdown

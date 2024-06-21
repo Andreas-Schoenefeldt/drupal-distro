@@ -1,9 +1,22 @@
 <?php
 
+use Drupal\Core\Form\FormStateInterface;
+
 /**
  * @file
  * Primary module hooks for Site Paragraphs module.
  */
+
+function site_paragraphs_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $formIds = [
+    'paragraph-wrapper-entity-edit-form',
+    'node-page-edit-form'
+  ];
+
+  if(in_array($form['#id'], $formIds)) {
+    $form['#attached']['library'][] = 'site_paragraphs/preview';
+  }
+}
 
 /**
  * Implements hook_preprocess().
