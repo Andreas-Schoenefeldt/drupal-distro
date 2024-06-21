@@ -1,0 +1,8 @@
+name: 'site_gallery'
+type: module
+description: 'Enables a Gallery Paragraph, powerd by swiper.js'
+package: site
+core_version_requirement: ^10 || ^11
+dependencies:
+  - site:site_paragraphs
+  - site:site_image
