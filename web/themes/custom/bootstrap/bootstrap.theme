@@ -46,6 +46,19 @@ function bootstrap_preprocess_breadcrumb(&$variables) {
   _test_container(\Drupal::routeMatch()->getParameter('node'), $variables);
 }
 
+function bootstrap_preprocess_links(&$variables) {
+
+  if ($variables['theme_hook_original'] === 'links__language_block') {
+    $currentLanguage = \Drupal::languageManager()->getCurrentLanguage();
+    $variables['label'] = $currentLanguage->getName();
+    unset($variables['links'][$currentLanguage->getId()]);
+
+    foreach ($variables['links'] as $lang => $link) {
+      $variables['links'][$lang]['link']['#options']['attributes']['class'][] = 'dropdown-item';
+    }
+  }
+}
+
 
 /**
  * @param NodeInterface $node
