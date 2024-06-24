@@ -1,3 +1,8 @@
+.region--main_menu {
+  margin-left: #{-2 * $nav-link-padding-y};
+  margin-right: #{-2 * $nav-link-padding-y};
+}
+
 .menu__main {
   border-bottom: 1px solid $body-color;
 }
