@@ -38,7 +38,7 @@ function site_paragraphs_preprocess_paragraph(&$variables) {
     $i = 0;
     foreach ($paragraph->field_content as $key => $entity) {
       $paragraph->field_content[$key]->entity->col_size = $columns[$i];
-      $paragraph->field_content[$key]->entity->col_class = 'col-md-' . $columns[$i];
+      $paragraph->field_content[$key]->entity->col_class = 'col-md-' . $columns[$i] . ' mb-md-0 mb-4';
       ++$i;
       if ($i === $count) {
         $i = 0;
