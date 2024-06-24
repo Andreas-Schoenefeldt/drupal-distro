@@ -8,7 +8,10 @@
 .field--widget-paragraphs {
   .container, .row, .paragraph {
     box-sizing: border-box;
+    max-width: calc(100vw - 60px);
   }
 
   @import "node_modules/bootstrap/scss/grid";
+
+  @import "components/swiper";
 }

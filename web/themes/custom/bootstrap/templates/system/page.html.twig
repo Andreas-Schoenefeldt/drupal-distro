@@ -67,7 +67,15 @@
 </main>
 {% endblock %}
 
-{% if page.footer %}
-  {{ page.footer }}
-{% endif %}
-
+<div class="container my-5" id="footer">
+  <div class="row justify-content-between text-secondary">
+    <div class="col-auto">
+      © 2024. {{ 'All Rights Reserved' | t }}.
+    </div>
+    <div class="col-auto">
+      {% if page.footer %}
+        {{ page.footer }}
+      {% endif %}
+    </div>
+  </div>
+</div>
