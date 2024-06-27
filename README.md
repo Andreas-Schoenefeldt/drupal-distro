@@ -20,6 +20,10 @@ Folders that need to be persistent:
 * `./web/sites/default/files` - public user uploaded files
 * `./private` - user and system protected files
 
+**php.ini settings to look out for:**
+* `upload_max_filesize: 10M`
+* `post_max_size: 10M`
+
 The following commands have to be executed:
 
 ```shell
