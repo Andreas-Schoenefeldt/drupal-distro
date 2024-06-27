@@ -137,6 +137,8 @@ function watchFiles() {
   gulp.watch('assets/js/**/*', {cwd: themePath}, js);
 }
 
+
+export const build = gulp.series(set_prod, clear, gulp.parallel(library_copy, js, css_bs, css_para, css));
 export default gulp.series(set_dev, clear, gulp.parallel(library_copy, js, css_bs, css_para, css), gulp.parallel(watchFiles));
 
 export function generate_image_styles(done) {
