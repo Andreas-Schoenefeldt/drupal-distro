@@ -1,6 +1,9 @@
 .region--main_menu {
   margin-left: #{-2 * $nav-link-padding-y};
   margin-right: #{-2 * $nav-link-padding-y};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu__main {

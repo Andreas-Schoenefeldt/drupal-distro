@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Site Search module.
+ */
+
+use Drupal\Core\Database\Query\AlterableInterface;
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function site_search_form_search_form_alter(&$form, &$form_state) {
+  $form['advanced']['#access'] = FALSE;
+  $form['help_link']['#access'] = FALSE;
+}
+
+function site_search_form_search_block_form_alter(&$form, &$form_state) {
+
+  $form['#attributes']['class'][] = 'dropdown';
+
+  $form['item'] = [
+      '#type' => 'inline_template',
+      '#template' => '<button type="button" class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">Search</button>'
+  ];
+
+  $form['dropdown'] = [
+    '#type' => 'container',
+    '#attributes' => [
+      'class' => ['dropdown-menu dropdown-menu-end p-3'],
+    ],
+
+    'keys' => $form['keys'],
+    'actions' => $form['actions'],
+  ];
+
+  unset($form['keys'], $form['actions']);
+}
+
+/**
+ * Implements hook_query_TAG_alter()
+ */
+function site_search_query_search_node_search_alter(AlterableInterface $query): void
+{
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $query->condition('n.langcode', [$language, 'und', 'zxx'], 'IN');
+}

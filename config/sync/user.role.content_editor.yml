@@ -10,6 +10,7 @@ dependencies:
     - file
     - node
     - path
+    - search
     - system
     - taxonomy
     - toolbar
@@ -35,6 +36,7 @@ permissions:
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'use advanced search'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view the administration theme'

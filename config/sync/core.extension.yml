@@ -50,6 +50,7 @@ module:
   site_gallery: 0
   site_image: 0
   site_paragraphs: 0
+  site_search: 0
   svg_image: 0
   system: 0
   taxonomy: 0

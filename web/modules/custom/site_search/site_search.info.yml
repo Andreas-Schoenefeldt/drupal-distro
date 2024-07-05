@@ -1,0 +1,5 @@
+name: 'Site Search'
+type: module
+description: 'improves teh core search and provides customizations'
+package: site
+core_version_requirement: ^10 || ^11
