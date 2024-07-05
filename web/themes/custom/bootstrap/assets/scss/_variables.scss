@@ -1,6 +1,8 @@
 $white: #fff;
 $black: #000;
 
+$mg-light-grey: #f3f3f3;
+
 $mb-blue: #00ADEF;
 
 $primary: $mb-blue;
@@ -19,3 +21,8 @@ $grid-gutter-width: 30px;
 
 // buttons
 $btn-border-width: $border-width;
+
+// forms
+$input-bg: $mg-light-grey;
+$input-color: $black;
+$input-border-radius: 0;

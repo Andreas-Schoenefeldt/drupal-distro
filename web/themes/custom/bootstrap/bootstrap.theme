@@ -20,14 +20,14 @@ function bootstrap_preprocess_html(array &$variables): void {
  * Implements hook_preprocess_HOOK() for page.html.twig.
  */
 function bootstrap_preprocess_page(array &$variables): void {
-  _test_container($variables['node'], $variables);
+  _test_container($variables['node'] ?? null, $variables);
 }
 
 /**
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
 function bootstrap_preprocess_node(array &$variables): void {
-  _test_container($variables['node'], $variables);
+  _test_container($variables['node'] ?? null, $variables);
 }
 
 
