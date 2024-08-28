@@ -1,0 +1,95 @@
+# see https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/creating-distributions/how-to-write-a-drupal-installation-profile
+# for details
+
+name: Bootstrap UX
+type: profile
+description: 'A drupal installation with a lot of config for usability and easy content editing.'
+core_version_requirement: ^9 || ^10
+
+# Optional: Declare your installation profile as a distribution
+# This will make the installer auto-select this installation profile.
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+distribution:
+  name: Bootstrap UX Drupal Distro
+
+  install:
+    theme: claro
+
+  langcode: de
+
+# Modules to install to support the profile.
+# Unlike dependencies, these can be uninstalled later.
+install:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - automated_cron
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor5
+  - clarofixes
+  - config
+  - contextual
+  - crop
+  - datetime
+  - dblog
+  - dynamic_page_cache
+  - easy_breadcrumb
+  - editor
+  - entity_reference_revisions
+  - field
+  - field_group
+  - field_ui
+  - file
+  - filter
+  - focal_point
+  - help
+  - image
+  - language
+  - link
+  - locale
+  - media
+  - media_library
+  - media_library_edit
+  - menu_link_content
+  - menu_ui
+  - mysql
+  - node
+  - options
+  - page_cache
+  - paragraphs_edit
+  - path
+  - path_alias
+  - responsive_image
+  - search
+  - shortcut
+  - site_gallery
+  - site_image
+  - site_paragraphs
+  - svg_image
+  - system
+  - taxonomy
+  - text
+  - token
+  - toolbar
+  - update
+  - user
+  - views_ui
+  - pathauto
+  - content_translation
+  - views
+  - paragraphs
+
+# Required modules. These cannot be uninstalled.
+# Note that any dependencies of the modules listed here will be installed automatically.
+dependencies:
+  - node
+  - block
+  - views
+  - paragraphs
+
+themes:
+  - bootstrap
+  - claro

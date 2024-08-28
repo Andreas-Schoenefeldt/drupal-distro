@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_1660
+label: 'Scale 1660'
+effects:
+  995cd6ea-e5f4-475c-b62a-07a21cea4e3c:
+    uuid: 995cd6ea-e5f4-475c-b62a-07a21cea4e3c
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  bb8e99b7-706b-4cf4-b4db-45728344e868:
+    uuid: bb8e99b7-706b-4cf4-b4db-45728344e868
+    id: image_scale
+    weight: 1
+    data:
+      width: 1660
+      height: null
+      upscale: false

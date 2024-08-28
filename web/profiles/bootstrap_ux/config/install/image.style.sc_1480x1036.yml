@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1480x1036
+label: 'Scale and Crop 1480 x 1036'
+effects:
+  5d42d1cf-80e7-42c8-9f64-29eb46ed1238:
+    uuid: 5d42d1cf-80e7-42c8-9f64-29eb46ed1238
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  3322b75f-fdef-411f-89cb-d8b9d038de58:
+    uuid: 3322b75f-fdef-411f-89cb-d8b9d038de58
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1480
+      height: 1036
+      crop_type: focal_point

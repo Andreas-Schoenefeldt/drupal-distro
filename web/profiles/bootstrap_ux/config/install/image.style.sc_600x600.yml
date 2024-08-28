@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_600x600
+label: 'Scale and Crop 600 x 600'
+effects:
+  e08c32a2-4bad-4b27-942f-ae25cea2733c:
+    uuid: e08c32a2-4bad-4b27-942f-ae25cea2733c
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  7489cd7f-f5d2-4555-98dd-e726478bab64:
+    uuid: 7489cd7f-f5d2-4555-98dd-e726478bab64
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      crop_type: focal_point

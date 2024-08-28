@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1100x528
+label: 'Scale and Crop 1100 x 528'
+effects:
+  7d3c97e1-0e5f-4cb3-921a-235c46d2927e:
+    uuid: 7d3c97e1-0e5f-4cb3-921a-235c46d2927e
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  5141ad57-d0fb-41a5-a6d7-b4eeee1675a8:
+    uuid: 5141ad57-d0fb-41a5-a6d7-b4eeee1675a8
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1100
+      height: 528
+      crop_type: focal_point

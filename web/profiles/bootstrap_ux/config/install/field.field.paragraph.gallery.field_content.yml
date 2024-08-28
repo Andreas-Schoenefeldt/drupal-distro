@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.container
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: paragraph.gallery.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: gallery
+label: 'Gallery Slides'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+      container: container
+    negate: 1
+    target_bundles_drag_drop:
+      container:
+        weight: -6
+        enabled: true
+      gallery:
+        weight: -7
+        enabled: true
+      image:
+        weight: -9
+        enabled: false
+      text:
+        weight: -8
+        enabled: false
+field_type: entity_reference_revisions

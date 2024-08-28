@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_370
+label: 'Scale 370'
+effects:
+  5de1b20c-5328-4bde-babb-79ee624448a6:
+    uuid: 5de1b20c-5328-4bde-babb-79ee624448a6
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  bcfaaed9-9295-4d42-ae65-5cdc57cbd8f3:
+    uuid: bcfaaed9-9295-4d42-ae65-5cdc57cbd8f3
+    id: image_scale
+    weight: 1
+    data:
+      width: 370
+      height: null
+      upscale: false

@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_260x260
+label: 'Scale and Crop 260 x 260'
+effects:
+  7f5932ec-0d53-4340-a1bd-2e1ac4c47e94:
+    uuid: 7f5932ec-0d53-4340-a1bd-2e1ac4c47e94
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  6cfdc40d-52fa-4493-bb89-1cdd640942c1:
+    uuid: 6cfdc40d-52fa-4493-bb89-1cdd640942c1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 260
+      height: 260
+      crop_type: focal_point

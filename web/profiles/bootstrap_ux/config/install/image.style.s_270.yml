@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_270
+label: 'Scale 270'
+effects:
+  da6d7557-fe61-49bc-a468-b4125b890898:
+    uuid: da6d7557-fe61-49bc-a468-b4125b890898
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  9c4ef782-50cc-45b6-a075-ceac2f4ccf2c:
+    uuid: 9c4ef782-50cc-45b6-a075-ceac2f4ccf2c
+    id: image_scale
+    weight: 1
+    data:
+      width: 270
+      height: null
+      upscale: false

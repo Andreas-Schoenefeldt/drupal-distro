@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1280x896
+label: 'Scale and Crop 1280 x 896'
+effects:
+  bb71ef1e-072d-42a1-af40-caf237f1718a:
+    uuid: bb71ef1e-072d-42a1-af40-caf237f1718a
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  cb4cad93-1e49-4031-8fd9-ebf3605f48cc:
+    uuid: cb4cad93-1e49-4031-8fd9-ebf3605f48cc
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1280
+      height: 896
+      crop_type: focal_point

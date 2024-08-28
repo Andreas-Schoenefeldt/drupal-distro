@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_210x210
+label: 'Scale and Crop 210 x 210'
+effects:
+  7c1842d0-34fc-46e2-848d-b2518c791ed9:
+    uuid: 7c1842d0-34fc-46e2-848d-b2518c791ed9
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  6e0bff78-605f-4d39-8e76-2ecd9e540f7c:
+    uuid: 6e0bff78-605f-4d39-8e76-2ecd9e540f7c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 210
+      height: 210
+      crop_type: focal_point

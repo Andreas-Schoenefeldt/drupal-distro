@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_330x231
+label: 'Scale and Crop 330 x 231'
+effects:
+  77a2ee75-a956-4db2-b478-79c40e41a560:
+    uuid: 77a2ee75-a956-4db2-b478-79c40e41a560
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  b9a3a8ca-39d8-4078-a450-c562bdf155b0:
+    uuid: b9a3a8ca-39d8-4078-a450-c562bdf155b0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 330
+      height: 231
+      crop_type: focal_point

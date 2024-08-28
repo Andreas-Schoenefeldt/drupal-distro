@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_640
+label: 'Scale 640'
+effects:
+  8c618849-b693-4dc3-972b-52abd91b2dde:
+    uuid: 8c618849-b693-4dc3-972b-52abd91b2dde
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  5e64cc35-6674-4242-acbf-4e053f83b92f:
+    uuid: 5e64cc35-6674-4242-acbf-4e053f83b92f
+    id: image_scale
+    weight: 1
+    data:
+      width: 640
+      height: null
+      upscale: false

@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_2580
+label: 'Scale 2580'
+effects:
+  dcb7b567-13ab-45ae-b650-d2da339e9721:
+    uuid: dcb7b567-13ab-45ae-b650-d2da339e9721
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  69bdbcdd-7360-48ad-813b-d1ecaa63f475:
+    uuid: 69bdbcdd-7360-48ad-813b-d1ecaa63f475
+    id: image_scale
+    weight: 1
+    data:
+      width: 2580
+      height: null
+      upscale: false

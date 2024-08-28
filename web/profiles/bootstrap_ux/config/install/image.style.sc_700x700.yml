@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_700x700
+label: 'Scale and Crop 700 x 700'
+effects:
+  0338cdde-1230-41e5-b4c0-62a30b719ebf:
+    uuid: 0338cdde-1230-41e5-b4c0-62a30b719ebf
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  a5511143-8bae-4c70-b4d7-b168265f617d:
+    uuid: a5511143-8bae-4c70-b4d7-b168265f617d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 700
+      crop_type: focal_point

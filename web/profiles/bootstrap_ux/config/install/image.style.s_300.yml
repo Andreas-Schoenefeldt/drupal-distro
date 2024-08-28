@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_300
+label: 'Scale 300'
+effects:
+  c37dc55c-eed6-4f38-8e1a-66fdc1b4349d:
+    uuid: c37dc55c-eed6-4f38-8e1a-66fdc1b4349d
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  9da1b787-3d46-4321-b301-448f5d7d01b5:
+    uuid: 9da1b787-3d46-4321-b301-448f5d7d01b5
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: null
+      upscale: false

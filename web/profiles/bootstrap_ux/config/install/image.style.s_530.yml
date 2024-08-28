@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_530
+label: 'Scale 530'
+effects:
+  5a82fa9a-2a2b-4d0e-8ad7-550cc4819ae2:
+    uuid: 5a82fa9a-2a2b-4d0e-8ad7-550cc4819ae2
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  a9be1685-ae74-4c9e-8d77-4d246e35531a:
+    uuid: a9be1685-ae74-4c9e-8d77-4d246e35531a
+    id: image_scale
+    weight: 1
+    data:
+      width: 530
+      height: null
+      upscale: false

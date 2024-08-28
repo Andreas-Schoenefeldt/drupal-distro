@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1260x882
+label: 'Scale and Crop 1260 x 882'
+effects:
+  beff2d0f-ad14-4fb5-86c4-3eb4ad2d8e83:
+    uuid: beff2d0f-ad14-4fb5-86c4-3eb4ad2d8e83
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  7ae04d5d-baf3-43df-aa38-e0b6d2b979a5:
+    uuid: 7ae04d5d-baf3-43df-aa38-e0b6d2b979a5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1260
+      height: 882
+      crop_type: focal_point

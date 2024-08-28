@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_1480
+label: 'Scale 1480'
+effects:
+  a109810b-579f-409a-98ba-76bd0139742c:
+    uuid: a109810b-579f-409a-98ba-76bd0139742c
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  9333a8b8-ff11-48d1-b4f6-b6f52239e781:
+    uuid: 9333a8b8-ff11-48d1-b4f6-b6f52239e781
+    id: image_scale
+    weight: 1
+    data:
+      width: 1480
+      height: null
+      upscale: false

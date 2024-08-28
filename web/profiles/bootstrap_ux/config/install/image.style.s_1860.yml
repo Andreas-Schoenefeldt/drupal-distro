@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_1860
+label: 'Scale 1860'
+effects:
+  1094fc8b-fe5a-4737-a597-7a5eef455823:
+    uuid: 1094fc8b-fe5a-4737-a597-7a5eef455823
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  f31d9f0c-2cf1-4adf-b0c6-094e8df9d2c2:
+    uuid: f31d9f0c-2cf1-4adf-b0c6-094e8df9d2c2
+    id: image_scale
+    weight: 1
+    data:
+      width: 1860
+      height: null
+      upscale: false

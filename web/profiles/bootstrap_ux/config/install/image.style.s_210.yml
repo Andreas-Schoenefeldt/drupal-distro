@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_210
+label: 'Scale 210'
+effects:
+  5e7e0882-5804-49b6-814c-4a918bfbb5c3:
+    uuid: 5e7e0882-5804-49b6-814c-4a918bfbb5c3
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  571cda15-5271-40c7-aff7-e71874622733:
+    uuid: 571cda15-5271-40c7-aff7-e71874622733
+    id: image_scale
+    weight: 1
+    data:
+      width: 210
+      height: null
+      upscale: false

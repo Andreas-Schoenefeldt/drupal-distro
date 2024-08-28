@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_580x580
+label: 'Scale and Crop 580 x 580'
+effects:
+  3d6a6728-c692-4ae2-b646-c9b09483b342:
+    uuid: 3d6a6728-c692-4ae2-b646-c9b09483b342
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  6a62835d-b636-4d9b-a7f8-370ad4f932ff:
+    uuid: 6a62835d-b636-4d9b-a7f8-370ad4f932ff
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 580
+      height: 580
+      crop_type: focal_point

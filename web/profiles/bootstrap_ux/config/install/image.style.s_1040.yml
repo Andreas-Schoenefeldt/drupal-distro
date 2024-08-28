@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_1040
+label: 'Scale 1040'
+effects:
+  034f61f8-8a80-4911-8c1e-36a66f76be0e:
+    uuid: 034f61f8-8a80-4911-8c1e-36a66f76be0e
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  316e852a-b19a-4a5a-9148-798d1f4b796e:
+    uuid: 316e852a-b19a-4a5a-9148-798d1f4b796e
+    id: image_scale
+    weight: 1
+    data:
+      width: 1040
+      height: null
+      upscale: false

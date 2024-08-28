@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_390
+label: 'Scale 390'
+effects:
+  853992bb-6093-4fba-8488-027d70063221:
+    uuid: 853992bb-6093-4fba-8488-027d70063221
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  fc3db97f-7929-4425-86ca-757668509a2f:
+    uuid: fc3db97f-7929-4425-86ca-757668509a2f
+    id: image_scale
+    weight: 1
+    data:
+      width: 390
+      height: null
+      upscale: false

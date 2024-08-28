@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_960x278
+label: 'Scale and Crop 960 x 278'
+effects:
+  6535e0d5-d73a-4e35-bb70-21b424fb0049:
+    uuid: 6535e0d5-d73a-4e35-bb70-21b424fb0049
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  b1695894-d412-425e-a5b2-f3277348a29e:
+    uuid: b1695894-d412-425e-a5b2-f3277348a29e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 278
+      crop_type: focal_point

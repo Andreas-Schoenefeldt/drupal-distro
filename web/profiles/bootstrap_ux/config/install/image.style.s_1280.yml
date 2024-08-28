@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_1280
+label: 'Scale 1280'
+effects:
+  30cbb4d1-af12-4b96-8332-48571a2d9bd2:
+    uuid: 30cbb4d1-af12-4b96-8332-48571a2d9bd2
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  c5a45fe5-ffbf-4a10-8955-609095fb8f94:
+    uuid: c5a45fe5-ffbf-4a10-8955-609095fb8f94
+    id: image_scale
+    weight: 1
+    data:
+      width: 1280
+      height: null
+      upscale: false

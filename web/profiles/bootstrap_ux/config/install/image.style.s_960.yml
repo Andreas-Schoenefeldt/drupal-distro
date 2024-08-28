@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_960
+label: 'Scale 960'
+effects:
+  d1dc4ea7-144d-424d-a252-849882ada3f6:
+    uuid: d1dc4ea7-144d-424d-a252-849882ada3f6
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  dce15aaa-4e09-4a8e-b032-87d40fce2a51:
+    uuid: dce15aaa-4e09-4a8e-b032-87d40fce2a51
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: null
+      upscale: false

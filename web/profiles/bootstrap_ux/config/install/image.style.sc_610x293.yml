@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_610x293
+label: 'Scale and Crop 610 x 293'
+effects:
+  b77aba87-6f89-443a-bc20-05e161634f9a:
+    uuid: b77aba87-6f89-443a-bc20-05e161634f9a
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  7bbe0809-c7b3-4bb4-abac-34d6564f6341:
+    uuid: 7bbe0809-c7b3-4bb4-abac-34d6564f6341
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 610
+      height: 293
+      crop_type: focal_point

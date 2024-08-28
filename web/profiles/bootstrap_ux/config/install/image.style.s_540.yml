@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_540
+label: 'Scale 540'
+effects:
+  7832ced9-cef4-4b79-a3f3-c37124a567fa:
+    uuid: 7832ced9-cef4-4b79-a3f3-c37124a567fa
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  e3639182-23c6-49ec-96ae-2b7963d852cb:
+    uuid: e3639182-23c6-49ec-96ae-2b7963d852cb
+    id: image_scale
+    weight: 1
+    data:
+      width: 540
+      height: null
+      upscale: false

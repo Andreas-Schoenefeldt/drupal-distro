@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_640x448
+label: 'Scale and Crop 640 x 448'
+effects:
+  32a5666b-7012-4619-aeab-9ad6a684b90c:
+    uuid: 32a5666b-7012-4619-aeab-9ad6a684b90c
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  35bc4590-ebe9-43ea-a459-cac1bd5ab5e0:
+    uuid: 35bc4590-ebe9-43ea-a459-cac1bd5ab5e0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 448
+      crop_type: focal_point

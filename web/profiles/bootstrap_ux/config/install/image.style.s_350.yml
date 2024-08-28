@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_350
+label: 'Scale 350'
+effects:
+  b2f3f206-b1f4-4f7b-be4d-9a152c2da9c4:
+    uuid: b2f3f206-b1f4-4f7b-be4d-9a152c2da9c4
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  4b50ce85-3d7e-4561-8ae6-c889430dbbbc:
+    uuid: 4b50ce85-3d7e-4561-8ae6-c889430dbbbc
+    id: image_scale
+    weight: 1
+    data:
+      width: 350
+      height: null
+      upscale: false

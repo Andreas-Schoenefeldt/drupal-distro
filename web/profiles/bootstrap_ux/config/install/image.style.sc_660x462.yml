@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_660x462
+label: 'Scale and Crop 660 x 462'
+effects:
+  332cb3e5-c117-4adf-9efe-497c5ae5cfc5:
+    uuid: 332cb3e5-c117-4adf-9efe-497c5ae5cfc5
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  e6d8c4ad-d28f-4522-92e5-3e881ede455a:
+    uuid: e6d8c4ad-d28f-4522-92e5-3e881ede455a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 660
+      height: 462
+      crop_type: focal_point

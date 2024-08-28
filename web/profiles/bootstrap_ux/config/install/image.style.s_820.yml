@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_820
+label: 'Scale 820'
+effects:
+  7c687dec-1fbc-4583-9197-dbd98ec064d4:
+    uuid: 7c687dec-1fbc-4583-9197-dbd98ec064d4
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  93454673-286b-4c49-8a30-bddb734e1a93:
+    uuid: 93454673-286b-4c49-8a30-bddb734e1a93
+    id: image_scale
+    weight: 1
+    data:
+      width: 820
+      height: null
+      upscale: false

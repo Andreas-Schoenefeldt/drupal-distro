@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_290x290
+label: 'Scale and Crop 290 x 290'
+effects:
+  e9b48f57-a7cd-4573-82ba-17a319fc6a4d:
+    uuid: e9b48f57-a7cd-4573-82ba-17a319fc6a4d
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  475d9d1e-aab8-4971-9b1d-3797075a14f2:
+    uuid: 475d9d1e-aab8-4971-9b1d-3797075a14f2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 290
+      height: 290
+      crop_type: focal_point

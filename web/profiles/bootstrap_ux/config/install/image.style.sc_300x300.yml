@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_300x300
+label: 'Scale and Crop 300 x 300'
+effects:
+  b27aafca-36ac-4bd6-b49a-4a4fea0abca9:
+    uuid: b27aafca-36ac-4bd6-b49a-4a4fea0abca9
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  5ac00cc9-5903-422c-9658-2b1dc27aab00:
+    uuid: 5ac00cc9-5903-422c-9658-2b1dc27aab00
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      crop_type: focal_point

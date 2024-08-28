@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_580
+label: 'Scale 580'
+effects:
+  b7095540-4d99-4a8c-80d8-1bfc162ec70f:
+    uuid: b7095540-4d99-4a8c-80d8-1bfc162ec70f
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  2bceade7-4e42-48bf-a446-8157413a168f:
+    uuid: 2bceade7-4e42-48bf-a446-8157413a168f
+    id: image_scale
+    weight: 1
+    data:
+      width: 580
+      height: null
+      upscale: false

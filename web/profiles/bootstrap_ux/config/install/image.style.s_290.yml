@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_290
+label: 'Scale 290'
+effects:
+  381f1964-35d5-4aab-832a-6e09f288ff31:
+    uuid: 381f1964-35d5-4aab-832a-6e09f288ff31
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  c393fd0e-605b-4b99-a04f-6409af848108:
+    uuid: c393fd0e-605b-4b99-a04f-6409af848108
+    id: image_scale
+    weight: 1
+    data:
+      width: 290
+      height: null
+      upscale: false

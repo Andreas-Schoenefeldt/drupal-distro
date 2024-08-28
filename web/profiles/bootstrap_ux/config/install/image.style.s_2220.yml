@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_2220
+label: 'Scale 2220'
+effects:
+  b676085b-4306-4e74-812c-f1647160230f:
+    uuid: b676085b-4306-4e74-812c-f1647160230f
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  21e0b493-74ba-4449-9371-6867b409a0fc:
+    uuid: 21e0b493-74ba-4449-9371-6867b409a0fc
+    id: image_scale
+    weight: 1
+    data:
+      width: 2220
+      height: null
+      upscale: false

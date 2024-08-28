@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_540x378
+label: 'Scale and Crop 540 x 378'
+effects:
+  e9bee89c-bdcd-43f2-996d-b811741005e0:
+    uuid: e9bee89c-bdcd-43f2-996d-b811741005e0
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  55b4bad3-6957-4697-9e5f-1d3b6f7bffa1:
+    uuid: 55b4bad3-6957-4697-9e5f-1d3b6f7bffa1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 540
+      height: 378
+      crop_type: focal_point

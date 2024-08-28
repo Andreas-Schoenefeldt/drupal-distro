@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_350x350
+label: 'Scale and Crop 350 x 350'
+effects:
+  81df487b-ef9c-4997-9469-817316e2b58c:
+    uuid: 81df487b-ef9c-4997-9469-817316e2b58c
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  4d55b877-595a-4092-9959-f9934b0292a7:
+    uuid: 4d55b877-595a-4092-9959-f9934b0292a7
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 350
+      crop_type: focal_point

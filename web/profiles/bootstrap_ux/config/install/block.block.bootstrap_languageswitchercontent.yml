@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - bootstrap
+id: bootstrap_languageswitchercontent
+theme: bootstrap
+region: header
+weight: -2
+provider: null
+plugin: 'language_block:language_content'
+settings:
+  id: 'language_block:language_content'
+  label: 'Language switcher (Content)'
+  label_display: '0'
+  provider: language
+visibility: {  }

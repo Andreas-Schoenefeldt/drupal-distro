@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_150x150
+label: 'Scale and Crop 150 x 150'
+effects:
+  e3654d69-5aa0-497d-bbe0-663b034d2437:
+    uuid: e3654d69-5aa0-497d-bbe0-663b034d2437
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  9d0dfb42-c279-46df-bdf1-0375b1882f47:
+    uuid: 9d0dfb42-c279-46df-bdf1-0375b1882f47
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      crop_type: focal_point

@@ -1,0 +1,117 @@
+<?php
+
+/**
+ * @file
+ * Drupal production site configuration file.
+ */
+
+$asLive = false;
+
+/**
+ * Database settings.
+ */
+
+$databases['default']['default'] = array (
+  'database' => 'DB-NAME',
+  'username' => 'DB-USER',
+  'password' => 'DB-pass',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'isolation_level' => 'READ COMMITTED',
+  'driver' => 'mysql',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);
+
+
+/**
+ * Override configuration values.
+ * ´drush --include-overridden cget´
+ */
+
+/**
+ * Show all error messages, with backtrace information.
+ */
+$config['system.logging']['error_level'] = $asLive ? 'hide' : 'verbose';
+
+/**
+ * Disable CSS and JS aggregation.
+ */
+$config['system.performance']['css']['preprocess'] = $asLive;
+$config['system.performance']['js']['preprocess'] = $asLive;
+
+/**
+ * Enable access to rebuild.php.
+ *
+ * This setting can be enabled to allow Drupal's php and database cached
+ * storage to be cleared via the rebuild.php page. Access to this page can also
+ * be gained by generating a query string from rebuild_token_calculator.sh and
+ * using these parameters in a request to rebuild.php.
+ */
+$settings['rebuild_access'] = !$asLive;
+
+/**
+ * Allow access to update.php script.
+ */
+$settings['update_free_access'] = !$asLive;
+
+if (!$asLive) {
+
+  /**
+   * Enable assertions.
+   *
+   * If you are using PHP 7.0 it is strongly recommended that you set
+   * zend.assertions=1 in the PHP.ini file (It cannot be changed from .htaccess
+   * or runtime) on development machines and to 0 in production.
+   */
+  // assert_options(ASSERT_ACTIVE, TRUE);
+  // assert_options(ASSERT_EXCEPTION, TRUE);
+
+  /**
+   * Enable local development services.
+   */
+  $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+
+  /**
+   * Disable the render cache (this includes the page cache).
+   *
+   * This setting disables the render cache by using the Null cache back-end
+   * defined by the development.services.yml file above.
+   *
+   * Do not use this setting until after the site is installed.
+   */
+  $settings['cache']['bins']['render'] = 'cache.backend.null';
+  $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+
+}
+
+$sendmailCommand = ini_get('sendmail_path') . " -t";
+
+$settings['mailer_sendmail_commands'] = [
+  $sendmailCommand
+];
+
+// configure local mailhog
+$config['symfony_mailer.mailer_transport.sendmail']['configuration']['query']['command'] = $sendmailCommand;
+$config['symfony_mailer.settings']['default_transport'] = 'sendmail';
+
+
+/**
+ * Allow test modules and themes to be installed.
+ */
+# $settings['extension_discovery_scan_tests'] = TRUE;
+
+
+// Limit log size.
+$config['dblog.settings']['row_limit'] = 1000;
+
+// Adjust local file system paths.
+// $settings['file_public_path'] = 'files';
+$settings['file_private_path'] =  DRUPAL_ROOT . '/../private';
+$settings['config_sync_directory'] = '../config/sync';
+$config['system.file']['path']['temporary'] = DRUPAL_ROOT . '/../tmp';
+
+
+// Trusted host configuration.
+# $settings['trusted_host_patterns'] = array('^www\.example\.de$');

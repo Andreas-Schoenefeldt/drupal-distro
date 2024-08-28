@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_1110
+label: 'Scale 1110'
+effects:
+  68c7fd94-efec-4ff5-b974-fd16ab8d7838:
+    uuid: 68c7fd94-efec-4ff5-b974-fd16ab8d7838
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  e740608e-6b05-40f0-947f-777bec04b567:
+    uuid: e740608e-6b05-40f0-947f-777bec04b567
+    id: image_scale
+    weight: 1
+    data:
+      width: 1110
+      height: null
+      upscale: false

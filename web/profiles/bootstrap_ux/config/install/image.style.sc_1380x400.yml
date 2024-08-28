@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1380x400
+label: 'Scale and Crop 1380 x 400'
+effects:
+  369cd19b-f106-48ec-9158-8c230c3ddc29:
+    uuid: 369cd19b-f106-48ec-9158-8c230c3ddc29
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  e5786a56-804c-4374-8800-66a4777bdf3b:
+    uuid: e5786a56-804c-4374-8800-66a4777bdf3b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1380
+      height: 400
+      crop_type: focal_point

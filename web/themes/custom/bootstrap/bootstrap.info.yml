@@ -8,7 +8,7 @@ libraries:
   - bootstrap/global
 
 dependencies:
-  site:site_paragraphs
+  - site:site_paragraphs
 
 regions:
   header: 'Header'

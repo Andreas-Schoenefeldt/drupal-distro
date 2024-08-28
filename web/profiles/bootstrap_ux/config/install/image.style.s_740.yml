@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_740
+label: 'Scale 740'
+effects:
+  7d0aa1e4-23a2-48b9-b1b9-af170eea1c0a:
+    uuid: 7d0aa1e4-23a2-48b9-b1b9-af170eea1c0a
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  aa7ade5d-c1e2-4644-9a5b-f578875b8b0a:
+    uuid: aa7ade5d-c1e2-4644-9a5b-f578875b8b0a
+    id: image_scale
+    weight: 1
+    data:
+      width: 740
+      height: null
+      upscale: false

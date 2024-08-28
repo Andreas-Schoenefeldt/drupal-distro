@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_690
+label: 'Scale 690'
+effects:
+  b4c0cd9d-2e68-495c-a261-d75637ca4184:
+    uuid: b4c0cd9d-2e68-495c-a261-d75637ca4184
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  a1781d76-0883-4bb0-a532-b66337d43fad:
+    uuid: a1781d76-0883-4bb0-a532-b66337d43fad
+    id: image_scale
+    weight: 1
+    data:
+      width: 690
+      height: null
+      upscale: false

@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_1110x366
+label: 'Scale and Crop 1110 x 366'
+effects:
+  2d7ce768-0c55-4946-8cbb-5b63917f6040:
+    uuid: 2d7ce768-0c55-4946-8cbb-5b63917f6040
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  4b91b56c-62c4-4f95-b65b-796570fde755:
+    uuid: 4b91b56c-62c4-4f95-b65b-796570fde755
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1110
+      height: 366
+      crop_type: focal_point

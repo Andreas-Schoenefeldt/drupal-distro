@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_420x420
+label: 'Scale and Crop 420 x 420'
+effects:
+  e2bede38-7483-40c7-a791-c081fcecd1e7:
+    uuid: e2bede38-7483-40c7-a791-c081fcecd1e7
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  865bee32-5609-4f80-9068-5037a41da5fa:
+    uuid: 865bee32-5609-4f80-9068-5037a41da5fa
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 420
+      height: 420
+      crop_type: focal_point

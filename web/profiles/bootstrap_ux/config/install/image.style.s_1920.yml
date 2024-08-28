@@ -1,0 +1,20 @@
+langcode: de
+status: true
+dependencies: {  }
+name: s_1920
+label: 'Scale 1920'
+effects:
+  88e25375-b215-40ca-bfdc-71e8df4d164d:
+    uuid: 88e25375-b215-40ca-bfdc-71e8df4d164d
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  006af281-eaca-456a-902d-2c53f0df749d:
+    uuid: 006af281-eaca-456a-902d-2c53f0df749d
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

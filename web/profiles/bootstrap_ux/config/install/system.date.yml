@@ -1,0 +1,9 @@
+first_day: 1
+country:
+  default: DE
+timezone:
+  default: Europe/Berlin
+  user:
+    configurable: true
+    default: 0
+    warn: false

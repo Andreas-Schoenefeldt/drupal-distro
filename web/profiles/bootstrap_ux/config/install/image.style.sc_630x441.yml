@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_630x441
+label: 'Scale and Crop 630 x 441'
+effects:
+  e0cd62f9-a7d0-43f1-a213-b2d366045709:
+    uuid: e0cd62f9-a7d0-43f1-a213-b2d366045709
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  538a1814-0277-4d21-a6d1-a08948d1b51c:
+    uuid: 538a1814-0277-4d21-a6d1-a08948d1b51c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 630
+      height: 441
+      crop_type: focal_point

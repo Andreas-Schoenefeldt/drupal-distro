@@ -1,0 +1,22 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - focal_point
+name: sc_830x241
+label: 'Scale and Crop 830 x 241'
+effects:
+  35c2eb35-36d2-462a-baca-f4bd6f517124:
+    uuid: 35c2eb35-36d2-462a-baca-f4bd6f517124
+    id: image_convert
+    weight: -1
+    data:
+      extension: webp
+  71a9d9df-6237-4c8d-924d-dd7f2b1208f9:
+    uuid: 71a9d9df-6237-4c8d-924d-dd7f2b1208f9
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 830
+      height: 241
+      crop_type: focal_point
